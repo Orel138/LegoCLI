@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # cli_config.py
 
 # Global options for the LEGO CLI

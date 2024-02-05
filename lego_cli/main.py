@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # main.py
 from cli_config import OPTIONS
 from data_analysis import analyze_by_theme
