@@ -42,4 +42,3 @@ jobs:
         pytest
         echo "Working directory: $(pwd)"
         echo "PYTHONPATH: $PYTHONPATH"
-      working-directory: ./LegoCLI
