@@ -2,7 +2,7 @@ from unittest.mock import patch
 import sys
 from pathlib import Path
 
-sys.path.append(str(Path(__file__).parent.parent / 'lego_cli'))
+sys.path.append(str(Path(__file__).parent))
 
 from lego_cli.main import LegoCLI
 
