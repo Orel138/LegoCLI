@@ -1,12 +1,7 @@
 #!/usr/bin/env python3
-import sys
-from pathlib import Path
-import pytest
 from unittest.mock import patch
-
-sys.path.append(str(Path(__file__).parent.parent / 'lego_cli'))
-
 from lego_cli.main import LegoCLI
+
 
 # Test to verify the analyze_lego_data method with a mock
 @patch('matplotlib.pyplot.show')
