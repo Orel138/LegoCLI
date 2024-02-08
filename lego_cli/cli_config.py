@@ -23,6 +23,27 @@ OPTIONS = {
             "help": "Analyze collection by theme",
             "argparse": {"action": "store_true"}
         },
+        "minifigs": {
+            "default": None,
+            "help": "Specify the number of minifigs",
+            "alias": ['-m'],
+            "argparse": {"action": "store_true"}
+        },
+        "pieces": {
+            "default": None,
+            "help": "Specify the number of pieces",
+            "alias": ['-p'],
+            "argparse": {"action": "store_true"}
+        },
+        # Other global options here
+    },
+    "Specifier": {
+        "id": {
+            "default": None,
+            "help": "Specify the ID of the set",
+            "alias": ['-i'],
+            "argparse": {"type": str}
+        },
         "theme": {
             "default": None,
             "help": "Specify a LEGO theme to analyze",
@@ -35,13 +56,12 @@ OPTIONS = {
             "alias": ['-st'],
             "argparse": {"type": str}
         },
-        "minifig": {
+        "year": {
             "default": None,
-            "help": "Specify the number of minifigs",
-            "alias": ['-m'],
+            "help": "Specify a year",
+            "alias": ['-y'],
             "argparse": {"type": str}
         },
-        # Other global options here
-    },
+    }
     # Other option groups here
 }

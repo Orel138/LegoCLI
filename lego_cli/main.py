@@ -2,7 +2,7 @@
 
 # main.py
 from .cli_config import OPTIONS
-from .data_analysis import analyze_by_theme
+from .data_analysis import analyze_by_theme, analyze
 import argparse
 import sys
 
@@ -151,6 +151,8 @@ class LegoCLI:
         if self.option.analyze_by_theme:
             self.analyze_by_theme(
                 self.option.csv_path, self.option.theme, self.option.subtheme)
+
+        analyze(self)
 
         print("self.option :", self.option)
         return self
